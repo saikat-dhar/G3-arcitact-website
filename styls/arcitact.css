@@ -1,0 +1,82 @@
+
+*{
+    font-family: 'work' ,sans-serif;
+}
+/* sheard styls */
+
+.btn-primary{
+    background-color: peru;
+    font-size: 1.25rem;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* header styles */
+header{
+    background: rgb(192, 188, 183);
+    padding: 30px 220px;
+}
+.nav-title{
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+
+}
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(12, 9, 9);
+}
+/* banner styls */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #242121;
+}
+.banner-img{
+    width: 100%;
+    margin-top: 20px;
+  
+}
+
+/* responsive-section */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
