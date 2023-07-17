@@ -13,18 +13,19 @@
     cursor: pointer;
 }
 .text-gray{
-    color: rgb(165, 154, 154);
+    color: #727272;
 }
-/* header styles */
-header{
-    background: rgb(192, 188, 183);
-    padding: 30px 220px;
-}
-.nav-title{
-    font-size: 2.9rem;
+.section-title{
+    font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
+/* header styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 30px 220px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -95,14 +96,55 @@ main{
     color: salmon;
 }
 
+/* some-facts-section */
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    border: 1px solid salmon;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    
+}
+.card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+}
+.card-description{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* sponsors-styls */
+
+.sponsors , .facts{
+    text-align: center;
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+    gap: 30px;
+}
+.sponsors-img img{
+    width: 180px;
+}
 
 
 /* responsive-section */
+
+
+/* mobile-devices */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav , .teams-container{
+    nav , .teams-container , .cards-container , .sponsors-img{
         flex-direction: column;
     }
     .tem-img-container{
@@ -112,14 +154,27 @@ main{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .cards-container{
+        gap: 20px;
+    }
+    .sponsors-img{
+        gap: 50px;
+        padding: 100px;
+    }
+
 }
+    /* medium-devices */
+
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 50px;
     }
-    nav , .teams-container{
+    nav , .teams-container ,
+    .sponsors-img
+    {
         flex-direction: column;
     }
+
    
    
     
